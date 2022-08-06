@@ -43,6 +43,9 @@ body {
     font-weight: bold;
     font-size: 18px;
 }
+.colorRed{
+    color: tomato;
+}
 @media (max-width: 500px){
     .container{
         padding: 50px 20px;
