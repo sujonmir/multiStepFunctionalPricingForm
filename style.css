@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato;
+    box-sizing: border-box;
+}
+.container{
+    padding: 50px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form_wrapper {}
+
+.inputWrapper {
+    padding: 20px 0;
+}
+.inputWrapper h3{
+    padding-bottom: 15px;
+}
+.inputWrapper label{
+    padding-left: 10px;
+}
+.sideNote{
+    color: #797878;
+    font-size: 12px;
+}
+.spacing{
+    padding-bottom: 8px;
+}
+.submit{
+    padding: 5px 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+@media (max-width: 500px){
+    .container{
+        padding: 50px 20px;
+    }
+}

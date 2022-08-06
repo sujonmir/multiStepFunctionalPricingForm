@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>The cost calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading"> Let's calculate the estimated total cost of your website</h1>
+        <div class="form_wrapper">
+            <form action="" id="msform" class="form">
+                <div class="inputWrapper" id="primary">
+                    <h3>Which technology do you want to your website?</h3>
+                    <input type="radio" id="cms" name="primary">
+                    <label for="cms">CMS <span class="sideNote">(Cheap & Fast Delivery)</span></label>
+                    <div class="spacing"></div>
+                    <input type="radio" id="customCoding" name="primary">
+                    <label for="customCoding">Custom Coding <span class="sideNote">(Expensive & Time Consuming)</span></label>
+                </div>
+                <!-- if CMS selected -->
+                <div class="inputWrapper" id="cmsSection">
+                    <h3>Which CMS do you want?</h3>
+                    <input type="radio" id="wp" name="cms">
+                    <label for="wp">WordPress <span class="sideNote">(all kind of website)</span></label>
+                    <div class="spacing"></div>
+                    <input type="radio" id="shopify" name="cms">
+                    <label for="shopify">Shopify <span class="sideNote">(E-commerce website Only)</span></label>
+                </div>
+                <!-- if Custom Coding selected -->
+                <div class="customSector" id="customSection">
+                    <div class="inputWrapper" id="htmlSection">
+                        <h3>website structure:</h3>
+                        <input type="radio" name="html" id="html" checked>
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="inputWrapper" id="styleSection">
+                        <h3>Style And Layout:</h3>
+                        <input type="radio" name="style" id="cssBootstrap">
+                        <label for="cssBootstrap">CSS, Bootstrap</label>
+                        <div class="spacing"></div>
+                        <input type="radio" name="style" id="onlyCSS">
+                        <label for="onlyCSS">CSS, Flex-box/Grid</label>
+                    </div>
+                    <div class="inputWrapper" id="jsSection">
+                        <h3>Style And Layout:</h3>
+                        <input type="radio" name="js" id="jquery">
+                        <label for="jquery">JS, jQuery</label>
+                        <div class="spacing"></div>
+                        <input type="radio" name="js" id="react">
+                        <label for="react">JS, React.js</label>
+                    </div>
+                    <div class="inputWrapper" id="backendSection">
+                        <h3>Backend Proggramming Language:</h3>
+                        <input type="radio" name="backEnd" id="laravel">
+                        <label for="laravel">Laravel <span class="sideNote">(Common Technology)</span></label>
+                        <div class="spacing"></div>
+                        <input type="radio" name="backEnd" id="nodeJs">
+                        <label for="nodeJs">Node.js <span class="sideNote">(Mordern Technology)</span></label>
+                    </div>
+                </div>
+                <div class="inputWrapper">
+                    <input type="submit" class="submit" id="submit" value="Calculate Cost">
+                </div>
+            </form>
+        </div>
+        <h1 class="result" id="">Total Cost: $<span id="result">000</span> <span class="sideNote">(USD)</span></h1>
+    </div>
+    <script src="../dist/bundle.js"></script>
+<script defer src="bundle.js"></script></body>
+
+</html>
